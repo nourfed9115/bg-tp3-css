@@ -1,0 +1,278 @@
+/* 1. Annuler les marges externes et internes de tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* 2. Conteneur */
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+/* 3. Barre de navigation principale (Étape 4) */
+.main-nav {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 13px;
+    border: 1px solid black;
+}
+
+.logo {
+    width: 110px;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.right-menu {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu li,
+.right-menu li {
+    padding: 0 10px;
+}
+
+.main-menu a,
+.right-menu a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+.main-menu a:hover {
+    border-bottom: 2px solid #000;
+}
+
+/* 4. Showcase (Étape 5) */
+.showcase {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    background-image: url('../img/slide1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 30%;
+    background-clip: content-box;
+    background-origin: content-box;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #378ff5;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.dark {
+    color: #fff;
+}
+
+/* 5. Home-cards (Étape 6 et Étape 8 : même chose) */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+.home-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards h3 {
+    margin-bottom: 5px;
+}
+
+.home-cards a {
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.home-cards a:hover i {
+    margin-left: 10px;
+}
+
+/* 6. Showcase Bigdata (Étape 7) */
+#bigData-intro {
+    height: 350px;
+    background-image: url('../img/bigData.png');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    border: none;
+    display: flex;
+}
+
+#bigData-intro .content {
+    width: 40%;
+    color: #262626;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+#bigData-intro p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* 7. ÉTAPE 9 : Ruban (adapté à class="ruban-dark" du HTML) */
+.ruban-dark {
+    width: 100%;
+    height: 350px;
+    background-image: url('../img/carbon2.jpg');
+    background-position: center 95% ;
+    
+    background-size: cover;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.ruban-dark .content {
+    width: 55%;
+    color: #fff;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.ruban-dark p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Bouton sombre directement pour .ruban-dark */
+.ruban-dark .btn {
+    background-color: #03254c;
+    color: #fff;
+}
+
+.ruban-dark .btn:hover {
+    opacity: 0.9;
+}
+
+/* 8. ÉTAPE 10 : Follow */
+.follow {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Tous les éléments à l'intérieur : espacement droit de 10 px */
+.follow * {
+    margin-right: 10px;
+}
+
+/* Les icônes dans les balises <span> : noir, taille 30 px */
+.follow span {
+    color: #000;
+    font-size: 30px;
+}
+
+/* 9. NOUVEAU - ÉTAPE 11 : Links */
+.links {
+    background-color: #f2f2f2;
+    color: #616161;
+    padding: 35px 0;
+    height: auto;
+    font-size: 12px;
+    border: none;
+}
+
+.links-inner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.links li {
+    line-height: 2.8;
+    list-style: none;
+}
+
+.links a {
+    color: #616161;
+    text-decoration: none;
+}
+
+/* 10. Autres blocs restants (Étape 3) */
+.sub-footer {
+    background-color: #d3eaac;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* 11. Footer */
+footer {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
